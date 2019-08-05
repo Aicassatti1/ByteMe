@@ -1,0 +1,89 @@
+
+body
+{
+	margin:0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url(travel.jpg);
+	background-size: 100%;
+  	background-repeat: no-repeat;
+  	padding: 0px 0px 0px 0px;
+  	background-color: #009999;
+  	height: 700px; /* Used in this example to enable scrolling */
+ }
+
+h1
+{
+	position: absolute;
+	position: absolute;
+  	top: 58%;
+  	left: 80%;
+  	transform: translate(-50%, -50%);
+  	font-family: Georgia;
+  	font-size: 40px;
+  	color: 	#FA8072;
+}
+
+
+/*top menu*/
+
+.main {
+  background-color: #009999;
+  background-image: url(travel.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 20px 0px 0px 0px;
+  margin-top: 0px;
+  height: 800px; /* Used in this example to enable scrolling */
+}
+
+.navList { 
+  background-color: #333;
+  margin: 0px;
+  position: fixed;
+  list-style-type: none;
+  width: 100%;
+  padding: 0px;
+  
+  /*keep it high*/
+}
+
+.navList li
+{
+  float:left; 
+}
+.navList a {
+  display: inline-block;
+  color: #fff;
+  font-size: : 16px;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navList a:hover {
+  background: #ddd;
+  color: black;
+  
+}
+
+
+.navList > li {
+  position: relative;
+
+}
+
+.navList > li > div {
+  visibility: hidden;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background-color: #333;
+}
+
+
+.navList > li:hover > div {
+  visibility: visible;
+  opacity: 1;
+  width: 100%;
+}
